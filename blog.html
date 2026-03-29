@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Insights & Blog | Advocate Name</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar glass-effect">
+        <div class="container">
+            <a href="index.html" class="nav-logo">Advocate Name</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="practice.html" class="nav-link">Practice Areas</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="blog.html" class="nav-link active">Insights</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Book Consultation</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle-btn"><i class="fa-solid fa-moon"></i></button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container reveal">
+            <h1>Legal Insights & Blog</h1>
+            <p>Decoding the law. Perspectives on Indian Cyber, Tax, and Intellectual Property legal frameworks.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container reveal">
+            
+            <!-- Category Filter mock -->
+            <div style="display: flex; gap: 15px; margin-bottom: 40px; justify-content: center; flex-wrap: wrap;">
+                <button class="btn btn-primary">All</button>
+                <button class="btn btn-outline">Cyber Law</button>
+                <button class="btn btn-outline">GST & Tax</button>
+                <button class="btn btn-outline">Intellectual Property</button>
+            </div>
+
+            <div class="grid-3">
+                <!-- Blog Card 1 -->
+                <article class="glass-effect" style="border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+                    <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cyber Security Law" style="height: 200px; object-fit: cover;">
+                    <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span style="color: var(--accent-color); font-size: 0.85rem; font-weight: 600; margin-bottom: 10px; display: block;">CYBER LAW</span>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 15px; flex-grow: 1;">Understanding the Admissibility of Electronic Evidence under Section 65B</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.5;">Navigating the complex landscape of digital evidence admissibility post the Supreme Court's landmark judgements...</p>
+                        <a href="#" style="color: var(--accent-color); font-weight: 600; margin-top: auto;">Read Full Article <i class="fa-solid fa-arrow-right" style="margin-left: 5px;"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 2 -->
+                <article class="glass-effect" style="border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Tax and Audit Law" style="height: 200px; object-fit: cover;">
+                    <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span style="color: var(--accent-color); font-size: 0.85rem; font-weight: 600; margin-bottom: 10px; display: block;">TAXATION</span>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 15px; flex-grow: 1;">Handling GST Show Cause Notices: A Compliance Handbook</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.5;">A procedural guide on how MSMEs should accurately formulate replies to intricate GST mismatch notices from the department...</p>
+                        <a href="#" style="color: var(--accent-color); font-weight: 600; margin-top: auto;">Read Full Article <i class="fa-solid fa-arrow-right" style="margin-left: 5px;"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 3 -->
+                <article class="glass-effect" style="border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+                    <img src="https://images.unsplash.com/photo-1507208752538-230cb9993ea0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Intellectual Property" style="height: 200px; object-fit: cover;">
+                    <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span style="color: var(--accent-color); font-size: 0.85rem; font-weight: 600; margin-bottom: 10px; display: block;">IPR</span>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 15px; flex-grow: 1;">Trademark Objections in India: Grounds and Robust Defenses</h3>
+                        <p style="font-size: 0.95rem; line-height: 1.5;">What to do when the registry issues an adverse examination report on your brand's trademark application under Section 9 and 11...</p>
+                        <a href="#" style="color: var(--accent-color); font-weight: 600; margin-top: auto;">Read Full Article <i class="fa-solid fa-arrow-right" style="margin-left: 5px;"></i></a>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 style="font-family: var(--font-heading); font-size: 1.5rem;">Advocate Name</h4>
+                    <p>Cyber Law | Taxation | IPR Expert</p>
+                </div>
+                <div class="footer-col" id="contact-info">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-phone" style="color: var(--accent-color); margin-right: 10px;"></i> +91 98765 43210</li>
+                        <li><i class="fa-solid fa-envelope" style="color: var(--accent-color); margin-right: 10px;"></i> contact@dummyadvocate.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Advocate Name. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>

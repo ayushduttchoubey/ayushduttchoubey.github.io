@@ -3,450 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advocate Portfolio - Legal Professional</title>
-    <link rel="stylesheet" href="website/css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Advocate Name | Cyber Law & Taxation Expert</title>
+    <meta name="description" content="Professional Advocate based in Jabalpur. Expert in Cyber Law, Taxation, IPR, and Criminal Law.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Disclaimer Modal -->
+    <div class="disclaimer-modal" id="disclaimer-modal">
+        <div class="modal-content glass-effect">
+            <h3><i class="fa-solid fa-gavel"></i> Disclaimer & Terms of Use</h3>
+            <p>
+                As per the rules of the Bar Council of India, we are not permitted to solicit work and advertise. 
+                By clicking on the "I Agree" button below, the user acknowledges the following:
+                <br><br>
+                1. There has been no advertisement, personal communication, solicitation, invitation or inducement of any sort whatsoever from us or any of our members to solicit any work through this website.
+                <br>
+                2. The user wishes to gain more information about us for their own information and use.
+                <br>
+                3. The information about us is provided to the user only on their specific request and any information obtained or materials downloaded from this website is completely at the user's volition and any transmission, receipt or use of this site does not create any lawyer-client relationship.
+                <br>
+                4. The information provided under this website is solely available at your request for informational purposes only, should not be interpreted as soliciting or advertisement. We are not liable for any consequence of any action taken by the user relying on material/information provided under this website.
+            </p>
+            <button class="btn btn-primary" id="agree-btn" style="width: 100%; margin-top: 20px;">I Agree & Enter Site</button>
+        </div>
+    </div>
+
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>My Portfolio Profile</h2>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#education" class="nav-link">Education</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#portfolio" class="nav-link">Portfolio</a>
-                <a href="#blog" class="nav-link">Blog</a>
-                <a href="website/certifications.html" class="nav-link">Certification</a>
-                <!-- Future: Uncomment when enrolled -->
-                <!-- <a href="#practice-areas" class="nav-link">Practice Areas</a> -->
-                <!-- <a href="#testimonials" class="nav-link">Testimonials</a> -->
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <nav class="navbar glass-effect">
+        <div class="container">
+            <a href="index.html" class="nav-logo">Advocate Name</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="practice.html" class="nav-link">Practice Areas</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="blog.html" class="nav-link">Insights</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Book Consultation</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle-btn">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Aspiring Legal Professional</h1>
-            <p>Law Student | Legal Researcher | Future Advocate</p>
-            <!-- Future: Update when enrolled -->
-            <!-- <p>Enrolled Advocate | Legal Consultant | Litigation Expert</p> -->
-            <div class="hero-buttons">
-                <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
-                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                <!-- Future: Add consultation booking -->
-                <!-- <a href="#consultation" class="btn btn-primary">Book Consultation</a> -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content reveal">
+                <span class="hero-subtitle">Premium Legal Counsel</span>
+                <h1 class="hero-title">Advocate Name</h1>
+                <p class="hero-desc">Cyber Law | Taxation | IPR Expert</p>
+                <p class="hero-desc" style="font-size: 1rem; color: var(--text-muted);">
+                    Providing strategic, result-oriented legal solutions for complex challenges in an evolving digital and financial framework.
+                </p>
+                <div class="hero-cta">
+                    <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+                    <a href="practice.html" class="btn btn-outline">Our Practice Areas</a>
+                </div>
+            </div>
+            <div class="hero-image reveal" style="transition-delay: 0.2s;">
+                <!-- Dummy image placeholder, user will replace with actual image -->
+                <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Law gavel and scales of justice">
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I am a dedicated law student with a passion for justice and legal excellence. Currently pursuing my legal education while gaining practical experience through internships and legal research.</p>
-                    <!-- Future: Update bio for practicing advocate -->
-                    <!-- <p>I am a practicing advocate with expertise in [specialization areas]. With [X] years of experience, I provide comprehensive legal solutions to individuals and businesses.</p> -->
-                    
-                    <div class="stats">
-                        <div class="stat-item">
-                            <h3>3+</h3>
-                            <p>Years of Legal Study</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>5+</h3>
-                            <p>Internships Completed</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>10+</h3>
-                            <p>Legal Research Papers</p>
-                        </div>
-                        <!-- Future: Add practice stats -->
-                        <!-- 
-                        <div class="stat-item">
-                            <h3>50+</h3>
-                            <p>Cases Handled</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>95%</h3>
-                            <p>Success Rate</p>
-                        </div>
-                        -->
-                    </div>
+    <!-- About Preview -->
+    <section class="section-padding">
+        <div class="container" style="display: flex; gap: 50px; align-items: center; flex-wrap: wrap;">
+            <div class="reveal" style="flex: 1; min-width: 300px;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Dedicated Legal Representation You Can Trust</h2>
+                <p>
+                    Based in Jabalpur, we offer specialized legal expertise navigating the intricate fields of Cyber Law, complex Taxation disputes, and Intellectual Property Rights.
+                </p>
+                <p>
+                    With extensive tenure representing clients before state tribunals and high courts, our approach is meticulous, robust, and client-centric, ensuring absolute preservation of your legal rights.
+                </p>
+                <a href="about.html" class="btn btn-outline" style="margin-top: 20px;">Learn More About Me</a>
+            </div>
+            <div class="reveal" style="flex: 1; min-width: 300px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; transition-delay: 0.2s;">
+                <div class="glass-effect" style="padding: 30px; border-radius: 8px; text-align: center;">
+                    <h3 style="font-size: 2.5rem; color: var(--accent-color); margin-bottom: 5px;">500+</h3>
+                    <p style="margin: 0;">Cases Handled</p>
                 </div>
-                <div class="about-image">
-                    <img src="profile-image.jpg" alt="Profile Picture">
+                <div class="glass-effect" style="padding: 30px; border-radius: 8px; text-align: center;">
+                    <h3 style="font-size: 2.5rem; color: var(--accent-color); margin-bottom: 5px;">10+</h3>
+                    <p style="margin: 0;">Years Experience</p>
+                </div>
+                <div class="glass-effect" style="padding: 30px; border-radius: 8px; text-align: center; grid-column: span 2;">
+                    <h3 style="font-size: 2.5rem; color: var(--accent-color); margin-bottom: 5px;">98%</h3>
+                    <p style="margin: 0;">Client Satisfaction Rating</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <h2>Education & Qualifications</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Bachelor of Laws (LL.B)</h3>
-                        <h4>University Name</h4>
-                        <span class="date">2022 - 2025</span>
-                        <p>Specialization in Constitutional Law and Criminal Law. CGPA: 8.5/10</p>
-                    </div>
+    <!-- Practice Areas Summary -->
+    <section class="section-padding" style="background-color: var(--bg-secondary);">
+        <div class="container reveal">
+            <div class="section-title">
+                <h2>Our Practice Areas</h2>
+                <p>Comprehensive legal expertise tailored to protect your interests.</p>
+            </div>
+            <div class="grid-3">
+                <div class="practice-card glass-effect">
+                    <i class="fa-solid fa-laptop-code practice-icon"></i>
+                    <h3>Cyber Law</h3>
+                    <p>Expert handling of cyber crimes, data breaches, digital fraud, and IT Act compliance.</p>
+                    <a href="practice.html" class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Bachelor's Degree</h3>
-                        <h4>University Name</h4>
-                        <span class="date">2019 - 2022</span>
-                        <p>Foundation in humanities/commerce/science. Percentage: 85%</p>
-                    </div>
+                <div class="practice-card glass-effect">
+                    <i class="fa-solid fa-file-invoice-dollar practice-icon"></i>
+                    <h3>Taxation</h3>
+                    <p>Strategic representation in Income Tax, GST anomalies, and tribunal appeals.</p>
+                    <a href="practice.html" class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <!-- Future: Add professional qualifications -->
-                <!--
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Bar Council Enrollment</h3>
-                        <h4>State Bar Council</h4>
-                        <span class="date">2025</span>
-                        <p>Enrolled as Advocate. Registration No: [Number]</p>
-                    </div>
+                <div class="practice-card glass-effect">
+                    <i class="fa-solid fa-lightbulb practice-icon"></i>
+                    <h3>IPR</h3>
+                    <p>Protecting intellectual assets through Trademarks, Copyrights, and patent litigation.</p>
+                    <a href="practice.html" class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                -->
+            </div>
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="practice.html" class="btn btn-primary">View All Practice Areas</a>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2>Experience & Internships</h2>
-            <div class="experience-grid">
-                <div class="experience-card">
-                    <h3>Legal Intern</h3>
-                    <h4>High Court of [State]</h4>
-                    <span class="date">Summer 2024</span>
-                    <p>Assisted senior advocates in case preparation, legal research, and court proceedings. Gained exposure to civil and criminal litigation.</p>
-                </div>
-                <div class="experience-card">
-                    <h3>Research Assistant</h3>
-                    <h4>Law Firm Name</h4>
-                    <span class="date">2023 - 2024</span>
-                    <p>Conducted legal research, drafted legal documents, and assisted in case analysis for corporate and commercial matters.</p>
-                </div>
-                <!-- Future: Add professional experience -->
-                <!--
-                <div class="experience-card">
-                    <h3>Junior Associate</h3>
-                    <h4>Law Firm Name</h4>
-                    <span class="date">2025 - Present</span>
-                    <p>Handling independent cases in [practice areas]. Successfully represented clients in [types of cases].</p>
-                </div>
-                -->
+    <!-- Quick Contact Form -->
+    <section class="section-padding">
+        <div class="container reveal" style="max-width: 800px;">
+            <div class="section-title">
+                <h2>Quick Contact</h2>
+                <p>Have a legal query? Reach out now for a consultation.</p>
+            </div>
+            <div class="contact-form-wrapper glass-effect" style="padding: 40px; border-radius: 8px;">
+                <!-- Dummy Google Form iframe. User will replace the src -->
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdummyformID/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
         </div>
     </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2>Legal Portfolio</h2>
-            <div class="portfolio-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="research">Research Papers</button>
-                <button class="filter-btn" data-filter="moot">Moot Court</button>
-                <button class="filter-btn" data-filter="writing">Legal Writing</button>
-                <!-- Future: Add case studies filter -->
-                <!-- <button class="filter-btn" data-filter="cases">Case Studies</button> -->
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="research">
-                    <div class="portfolio-content">
-                        <h3>Constitutional Law Research</h3>
-                        <p>Analysis of Fundamental Rights under Article 21</p>
-                        <a href="#" class="portfolio-link">View Document</a>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="moot">
-                    <div class="portfolio-content">
-                        <h3>National Moot Court Competition</h3>
-                        <p>Best Memorial Award - Criminal Law Case</p>
-                        <a href="#" class="portfolio-link">View Brief</a>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="writing">
-                    <div class="portfolio-content">
-                        <h3>Legal Opinion Draft</h3>
-                        <p>Corporate Compliance and Regulatory Framework</p>
-                        <a href="#" class="portfolio-link">Read More</a>
-                    </div>
-                </div>
-                <!-- Future: Add case studies -->
-                <!--
-                <div class="portfolio-item" data-category="cases">
-                    <div class="portfolio-content">
-                        <h3>Landmark Case Victory</h3>
-                        <p>Successfully defended client in [case type]</p>
-                        <a href="#" class="portfolio-link">Case Study</a>
-                    </div>
-                </div>
-                -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Future: Practice Areas Section (Uncomment when enrolled) -->
-    <!--
-    <section id="practice-areas" class="practice-areas">
-        <div class="container">
-            <h2>Practice Areas</h2>
-            <div class="practice-grid">
-                <div class="practice-card">
-                    <i class="fas fa-gavel"></i>
-                    <h3>Criminal Law</h3>
-                    <p>Defense in criminal cases, bail applications, and criminal appeals</p>
-                </div>
-                <div class="practice-card">
-                    <i class="fas fa-handshake"></i>
-                    <h3>Civil Litigation</h3>
-                    <p>Property disputes, contract matters, and civil remedies</p>
-                </div>
-                <div class="practice-card">
-                    <i class="fas fa-building"></i>
-                    <h3>Corporate Law</h3>
-                    <p>Business compliance, corporate governance, and commercial disputes</p>
-                </div>
-                <div class="practice-card">
-                    <i class="fas fa-home"></i>
-                    <h3>Family Law</h3>
-                    <p>Divorce, custody, matrimonial disputes, and family settlements</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-
-    <!-- Blog Section -->
-    <section id="blog" class="blog">
-        <div class="container">
-            <h2>Legal Insights & Blog</h2>
-            <div class="blog-grid">
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="blog1.jpg" alt="Blog Post">
-                    </div>
-                    <div class="blog-content">
-                        <h3>Understanding the New Criminal Procedure Code</h3>
-                        <p class="blog-meta">Published on June 15, 2025</p>
-                        <p>An analysis of recent amendments and their impact on criminal proceedings...</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </article>
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="blog2.jpg" alt="Blog Post">
-                    </div>
-                    <div class="blog-content">
-                        <h3>Digital Evidence in Indian Courts</h3>
-                        <p class="blog-meta">Published on June 10, 2025</p>
-                        <p>Exploring the admissibility and challenges of digital evidence...</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Future: Testimonials Section (Uncomment when enrolled) -->
-    <!--
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2>Client Testimonials</h2>
-            <div class="testimonials-slider">
-                <div class="testimonial-card">
-                    <p>"Excellent legal representation. Professional and knowledgeable approach to handling my case."</p>
-                    <div class="client-info">
-                        <h4>Client Name</h4>
-                        <span>Business Owner</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>advocate@email.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Phone</h3>
-                            <p>+91 98765 43210</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Address</h3>
-                            <p>City, State, India</p>
-                        </div>
-                    </div>
-                    <!-- Future: Add chamber address -->
-                    <!--
-                    <div class="contact-item">
-                        <i class="fas fa-building"></i>
-                        <div>
-                            <h3>Chamber</h3>
-                            <p>Chamber No. XX, District Court Complex</p>
-                        </div>
-                    </div>
-                    -->
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" placeholder="Your Phone">
-                    </div>
-                    <div class="form-group">
-                        <select>
-                            <option>General Inquiry</option>
-                            <option>Legal Consultation</option>
-                            <option>Internship Opportunity</option>
-                            <!-- Future: Add case consultation -->
-                            <!-- <option>Case Consultation</option> -->
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Future: Consultation Booking Section (Uncomment when enrolled) -->
-    <!--
-    <section id="consultation" class="consultation">
-        <div class="container">
-            <h2>Book a Consultation</h2>
-            <div class="consultation-content">
-                <div class="consultation-info">
-                    <h3>Legal Consultation Services</h3>
-                    <ul>
-                        <li>Initial case assessment</li>
-                        <li>Legal advice and strategy</li>
-                        <li>Document review</li>
-                        <li>Court representation</li>
-                    </ul>
-                    <div class="consultation-fees">
-                        <h4>Consultation Fees</h4>
-                        <p>Initial Consultation: ₹2,000</p>
-                        <p>Follow-up Sessions: ₹1,500</p>
-                    </div>
-                </div>
-                <div class="booking-form">
-                    <h3>Schedule Your Appointment</h3>
-                    <form>
-                        <div class="form-row">
-                            <input type="text" placeholder="Full Name" required>
-                            <input type="email" placeholder="Email" required>
-                        </div>
-                        <div class="form-row">
-                            <input type="tel" placeholder="Phone Number" required>
-                            <select required>
-                                <option value="">Select Practice Area</option>
-                                <option value="criminal">Criminal Law</option>
-                                <option value="civil">Civil Law</option>
-                                <option value="corporate">Corporate Law</option>
-                                <option value="family">Family Law</option>
-                                <option value="Tradeamrk">Trademark Law</option>
-                            </select>
-                        </div>
-                        <div class="form-row">
-                            <input type="date" required>
-                            <select required>
-                                <option value="">Select Time</option>
-                                <option value="10:00">10:00 AM</option>
-                                <option value="11:00">11:00 AM</option>
-                                <option value="14:00">2:00 PM</option>
-                                <option value="15:00">3:00 PM</option>
-                            </select>
-                        </div>
-                        <textarea placeholder="Brief description of your legal matter" rows="4"></textarea>
-                        <button type="submit" class="btn btn-primary">Book Consultation</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Legal Portfolio</h3>
-                    <p>Dedicated to justice and legal excellence</p>
-                    <!-- Future: Add bar council info -->
-                    <!-- <p>Enrolled Advocate | Bar Council Registration: [Number]</p> -->
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 style="font-family: var(--font-heading); font-size: 1.5rem;">Advocate Name</h4>
+                    <p>Cyber Law | Taxation | IPR Expert</p>
+                    <p>Registered under Bar Council of Dummy State (Reg No. DUMMY/123/YEAR)</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/dummy" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/dummy" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Profile</a></li>
+                        <li><a href="practice.html">Practice Areas</a></li>
+                        <li><a href="blog.html">Insights</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Follow Me</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                    </div>
+                <div class="footer-col">
+                    <h4>Legal Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" id="contact-info">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot" style="color: var(--accent-color); margin-right: 10px;"></i> Dummy Office Address, Jabalpur, MP - 482001</li>
+                        <li><i class="fa-solid fa-phone" style="color: var(--accent-color); margin-right: 10px;"></i> +91 98765 43210</li>
+                        <li><i class="fa-solid fa-envelope" style="color: var(--accent-color); margin-right: 10px;"></i> contact@dummyadvocate.com</li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Legal Portfolio. All rights reserved.</p>
-                <!-- Future: Add legal disclaimers -->
-                <!-- <p>Legal Disclaimer | Privacy Policy | Terms of Service</p> -->
+                <p>&copy; 2026 Advocate Name. All Rights Reserved. Built with professionalism.</p>
             </div>
         </div>
     </footer>
 
-    <script src="website/js/script.js"></script>
+    <!-- Floating Buttons -->
+    <div class="floating-btns">
+        <a href="https://wa.me/919876543210" class="floating-btn whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="#" class="floating-btn scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
 </body>
 </html>
